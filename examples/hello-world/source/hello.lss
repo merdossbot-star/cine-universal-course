@@ -1,0 +1,7 @@
+@use "hello.dss";
+app "hello" {
+  html "./index.html";
+  css ["./hello.css"];
+  ass ["./hello.ass"];
+  bss ["./hello.bss"];
+}

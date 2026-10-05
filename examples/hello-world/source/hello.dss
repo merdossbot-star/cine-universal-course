@@ -1,0 +1,3 @@
+@const title = "Hello CINE";
+@const accent = #0af;
+@data user { name: "World"; };

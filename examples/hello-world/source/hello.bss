@@ -1,0 +1,6 @@
+template "hello" () {
+  main.hero {
+    button#hello-button { text <- "Dire bonjour"; }
+    p#hello-status { text <- "Prêt."; }
+  }
+}

@@ -1,0 +1,2 @@
+@use "hello.dss";
+:root{font-family:system-ui,sans-serif;color-scheme:dark;background:#07080a;color:#eceae5}.hero{min-height:100vh;display:grid;place-items:center;padding:32px}.hero>div{max-width:620px;padding:32px;border:1px solid rgba(236,234,229,.12);border-radius:20px;background:#12151a}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:#969ca7}button{margin-top:18px;padding:11px 15px;border:0;border-radius:10px;background:#d6dae2;color:#08090b;font-weight:700}

@@ -1,0 +1,63 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cours CINE Universal</title><link rel="stylesheet" href="assets/site.css"></head><body>
+<header class="header"><div class="container header-inner"><a class="brand" href="index.html">CINE Universal</a><nav class="nav"><a href="index.html">Accueil</a><a class="active" href="course.html">Cours</a><a href="examples.html">Exemples</a><a href="reference.html">Référence</a><a href="deploy.html">Déployer</a></nav></div></header>
+<main class="container">
+<section class="hero" id="start"><div class="eyebrow">Cours complet</div><h1>Apprendre CINE comme une discipline.</h1><p class="lead">Le cours part de la création d’une page et va jusqu’au compiler, au dictionnaire, aux frontends de frameworks et aux backends desktop/mobile.</p></section>
+<section class="section"><div class="two-col"><div><div class="eyebrow">01 · Architecture</div><h2>Les responsabilités ne se mélangent pas.</h2><p class="lead">DSS porte les données, CSS la présentation, ASS le comportement, BSS la composition et LSS le graphe de l’application.</p></div><div class="code"><pre>project/
+├── index.html
+├── app.dss
+├── app.css
+├── app.ass
+├── components.bss
+└── app.lss</pre></div></div></section>
+<section class="section" id="languages"><div class="eyebrow">02 · Les cinq langages</div><h2>Chaque extension a une raison d’exister.</h2><div class="grid grid-3"><div class="card"><h3>DSS · données</h3><p class="small">Constantes, tableaux, objets, couleurs, dimensions, endpoints, flags d’environnement et imports. Les `@const` et `@data` sont exportés selon les règles du langage.</p></div><div class="card"><h3>CSS · design</h3><p class="small">Styles, variables et canaux. L’expansion compile-time peut fournir des valeurs, tandis que <span class="mono">var(--cine-…)</span> reste un canal runtime.</p></div><div class="card"><h3>ASS · comportement</h3><p class="small">Événements, actions, états, attributs, propriétés, texte, HTML de confiance et lifecycle.</p></div><div class="card"><h3>BSS · composition</h3><p class="small">Templates, éléments, slots et conditions. Le <span class="mono">for</span> dynamique reste un mécanisme runtime ; <span class="mono">@each</span> est compile-time.</p></div><div class="card"><h3>LSS · application</h3><p class="small">Pages, layouts, composants, plugins, routes, resources, environnement et références vers DSS/CSS/ASS/BSS/JS.</p></div><div class="card"><h3>HTML · socle</h3><p class="small">Le HTML reste le support sémantique ; CINE l’améliore par comportement, données, composition et cinématique.</p></div></div></section>
+<section class="section"><div class="eyebrow">03 · Hello World</div><h2>Aucun fichier CINE ne doit être vide.</h2><p class="lead">Le laboratoire fournit un vrai mini-projet avec du code dans chaque extension. Les fichiers sont visibles ci-dessous et la sortie compilée est testable dans le navigateur.</p><div class="source-grid"><article class="card source-card"><h3>hello.dss</h3><div class="code"><pre>@const title = "Hello CINE";
+@const accent = #0af;
+@data user { name: "World"; };</pre></div></article><article class="card source-card"><h3>hello.css</h3><div class="code"><pre>@use "hello.dss";
+.hero { color: #{dss.accent}; padding: 24px; }</pre></div></article><article class="card source-card"><h3>hello.ass</h3><div class="code"><pre>@use "hello.dss";
+#hello {
+  on click -> action("hello.click");
+  text <- dss.title;
+}</pre></div></article><article class="card source-card"><h3>hello.bss</h3><div class="code"><pre>template "hello" () {
+  section.hero {
+    text <- dss.title;
+  }
+}</pre></div></article><article class="card source-card"><h3>hello.lss</h3><div class="code"><pre>@use "hello.dss";
+app "hello" {
+  html "./index.html";
+  css ["./hello.css"];
+  ass ["./hello.ass"];
+  bss ["./hello.bss"];
+}</pre></div></article><article class="card source-card"><h3>index.html</h3><div class="code"><pre>&lt;main id="hello"&gt;
+  &lt;div data-cine-root&gt;&lt;/div&gt;
+&lt;/main&gt;</pre></div></article></div><div class="hero-actions"><a class="btn" href="examples/hello-world/index.html">Exécuter Hello World</a><a class="btn ghost" href="examples.html#hello">Comparer la structure</a></div></section>
+<section class="section" id="compiler"><div class="two-col"><div><div class="eyebrow">04 · Compiler & validation</div><h2>Un fichier ne doit pas seulement être parsé.</h2><p class="lead">La chaîne de preuve devient : structure → langage → sémantique → liaison → préparation runtime → preuve cible.</p><div class="steps"><div class="step"><div><strong>Structure</strong><div class="small">Automate à pile pour délimiteurs, chaînes et commentaires.</div></div></div><div class="step"><div><strong>Syntaxe</strong><div class="small">Parser spécifique au langage.</div></div></div><div class="step"><div><strong>Sémantique</strong><div class="small">Variables, scopes, types, capabilities et effets.</div></div></div><div class="step"><div><strong>Liaison</strong><div class="small">Imports, packages, routes, plugins et ressources.</div></div></div><div class="step"><div><strong>Preuve</strong><div class="small">Build, trace comportementale et tests de target.</div></div></div></div></div><div class="code"><pre>cine check project/
+cine compile main.lss
+cine build main.lss --out dist/
+cine slice main.lss --out dist/slice/
+cine target main.lss --target android.views</pre></div></div></section>
+<section class="section" id="instances"><div class="eyebrow">05 · Universal Instances</div><h2>Chaque événement ou tâche devient une instance CINE.</h2><p class="lead">La contrainte d’instance donne une unité commune pour l’événement, l’animation, la cinématique, les tâches, les modèles IA et l’observation.</p><div class="code"><pre>const instance = Cine.universal.create({
+  id: "button.submit.click",
+  kind: "event",
+  actor: "submitButton",
+  inputs: { source: "pointer" },
+  vars: { progress: 0, velocity: 0 },
+  actions: ["validate", "save", "navigate"],
+});
+Cine.universal.instances.set(instance.id, instance);</pre></div><div class="callout">Le stockage recommandé pour le runtime est une <strong>Map indexée par ID</strong>. Elle permet l’accès O(1), la sérialisation contrôlée et la génération d’un catalogue d’instances pour l’observabilité et l’IA.</div></section>
+<section class="section" id="dictionary"><div class="eyebrow">06 · Dictionnaire</div><h2>Une classe globale, une identité stable.</h2><p class="lead">Une clé canonique CINE ne doit pas être réutilisée pour deux sémantiques différentes. Un nom humain peut être un alias si son empreinte sémantique est identique ; sinon, le conflit est refusé.</p><div class="grid grid-3"><div class="card"><h3>Framework</h3><p class="small mono">framework.react</p></div><div class="card"><h3>Package</h3><p class="small mono">package.react-dom</p></div><div class="card"><h3>Capability</h3><p class="small mono">ui.component</p></div></div></section>
+<section class="section" id="interop"><div class="eyebrow">07 · Framework X</div><h2>Analyser, classifier, traduire ou attendre.</h2><p class="lead">Le parser d’interop suit les imports, symboles, scopes, types et constructions. Une API inconnue n’est jamais inventée : elle devient <span class="mono">BRIDGED</span>, <span class="mono">RESIDUAL</span> ou <span class="mono">UNSUPPORTED</span>.</p><div class="code"><pre>Framework X
+  → Language AST/CST
+  → Semantic Model
+  → Capability Graph
+  → CINE IR
+  → CINE alternative
+  → compile/check
+  → differential proof</pre></div></section>
+<section class="section" id="sdk"><div class="eyebrow">08 · JSDK local</div><h2>Le SDK comme magasin local de packages analysés.</h2><p class="lead">Une liste de liens peut alimenter l’ingestion. Les imports internes du package sont suivis récursivement ; les secrets sont détectés et les artefacts d’analyse sont nettoyés ; un package non certifié reste en attente plutôt qu’être présenté comme « implémenté ».</p><div class="code"><pre>cine sdk add https://registry.npmjs.org/…
+cine sdk scan ./packages/my-lib
+cine sdk graph my-lib
+cine sdk inspect my-lib
+cine sdk certify my-lib</pre></div></section>
+<section class="section" id="targets"><div class="eyebrow">09 · Multi-target</div><h2>Un IR, plusieurs backends.</h2><div class="table-wrap"><table class="table"><thead><tr><th>Famille</th><th>Sortie</th><th>Idée de lowering</th></tr></thead><tbody><tr><td>Web</td><td>HTML/CSS/JS</td><td>DOM + runtime CINE</td></tr><tr><td>Java Desktop</td><td>.java + .form / FXML</td><td>widgets + layouts</td></tr><tr><td>Python</td><td>.py + .ui + QSS</td><td>Qt Widgets</td></tr><tr><td>Android</td><td>XML + Kotlin / Compose</td><td>Views ou déclaratif</td></tr><tr><td>C#</td><td>XAML + C#</td><td>WPF/Avalonia</td></tr><tr><td>Rust/Go</td><td>code cible</td><td>toolkit natif</td></tr></tbody></table></div></section>
+<section class="section" id="advanced"><div class="eyebrow">10 · Avancé</div><h2>3D, maps, vidéo, SVG, Canvas et cinématique.</h2><p class="lead">Ces capacités doivent rejoindre le même modèle : une capability, une instance, un graph de dépendances, un adapter de plateforme et une preuve.</p><div class="grid grid-4"><div class="card"><h3>3D</h3><p class="small">Three.js, Babylon.js, PixiJS, WebGPU/WebGL → CINE render graph.</p></div><div class="card"><h3>Maps</h3><p class="small">Leaflet, MapLibre, OpenLayers, Mapbox → CINE geo graph + layers.</p></div><div class="card"><h3>Video</h3><p class="small">Video.js, HLS.js, Shaka Player → media resource + timeline.</p></div><div class="card"><h3>Drawing</h3><p class="small">SVG, Canvas, Fabric, Konva, D3 → vector/canvas render graph.</p></div></div></section>
+</main><footer class="footer"><div class="container">Cours CINE Universal 1.0.0 · utilisez la référence technique du dépôt pour les grammaires normatives.</div></footer><script src="assets/site.js"></script></body></html>

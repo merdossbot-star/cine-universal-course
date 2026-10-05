@@ -1,0 +1,7 @@
+@use "hello.dss";
+#hello-button {
+  on click -> action("hello.click");
+}
+#hello-status {
+  text <- "Ready";
+}

@@ -1,0 +1,620 @@
+{
+  "schema": "cine-framework-registry-final/1.0",
+  "version": "1.0.0",
+  "count": 36,
+  "frameworks": [
+    {
+      "id": "framework.alpine",
+      "key": "alpine",
+      "name": "alpine",
+      "kind": "framework-profile",
+      "packages": [
+        "alpinejs"
+      ],
+      "capabilities": [
+        "state.signal",
+        "ui.binding",
+        "ui.directive",
+        "ui.events"
+      ],
+      "sourceFile": "alpine.json"
+    },
+    {
+      "id": "framework.angular",
+      "key": "angular",
+      "name": "angular",
+      "kind": "framework-profile",
+      "packages": [
+        "@angular/core"
+      ],
+      "capabilities": [
+        "forms.core",
+        "resource.async",
+        "router.core",
+        "state.computed",
+        "state.signal",
+        "ui.component",
+        "ui.inputs",
+        "ui.lifecycle",
+        "ui.outputs"
+      ],
+      "sourceFile": "angular.json"
+    },
+    {
+      "id": "framework.astro",
+      "key": "astro",
+      "name": "astro",
+      "kind": "framework-profile",
+      "packages": [
+        "astro"
+      ],
+      "capabilities": [
+        "resource.async",
+        "server.islands",
+        "server.ssr",
+        "ui.component"
+      ],
+      "sourceFile": "astro.json"
+    },
+    {
+      "id": "framework.babylon",
+      "key": "babylon",
+      "name": "babylon",
+      "kind": "framework-profile",
+      "packages": [
+        "@babylonjs/core",
+        "@babylonjs/loaders"
+      ],
+      "capabilities": [
+        "render.camera",
+        "render.scene",
+        "render.webgpu"
+      ],
+      "sourceFile": "babylon.json"
+    },
+    {
+      "id": "framework.chakra",
+      "key": "chakra",
+      "name": "chakra",
+      "kind": "framework-profile",
+      "packages": [
+        "@chakra-ui/react"
+      ],
+      "capabilities": [
+        "accessibility.aria",
+        "design.component",
+        "design.conditions",
+        "design.responsive",
+        "design.tokens"
+      ],
+      "sourceFile": "chakra.json"
+    },
+    {
+      "id": "framework.express",
+      "key": "express",
+      "name": "express",
+      "kind": "framework-profile",
+      "packages": [
+        "express"
+      ],
+      "capabilities": [
+        "server.http",
+        "server.middleware",
+        "server.route"
+      ],
+      "sourceFile": "express.json"
+    },
+    {
+      "id": "framework.fastify",
+      "key": "fastify",
+      "name": "fastify",
+      "kind": "framework-profile",
+      "packages": [
+        "fastify"
+      ],
+      "capabilities": [
+        "server.http",
+        "server.middleware",
+        "server.route",
+        "server.schema"
+      ],
+      "sourceFile": "fastify.json"
+    },
+    {
+      "id": "framework.gsap",
+      "key": "gsap",
+      "name": "gsap",
+      "kind": "framework-profile",
+      "packages": [
+        "gsap"
+      ],
+      "capabilities": [
+        "motion.easing",
+        "motion.plugin",
+        "motion.timeline",
+        "motion.tween"
+      ],
+      "sourceFile": "gsap.json"
+    },
+    {
+      "id": "framework.hono",
+      "key": "hono",
+      "name": "hono",
+      "kind": "framework-profile",
+      "packages": [
+        "hono"
+      ],
+      "capabilities": [
+        "server.edge",
+        "server.http",
+        "server.middleware",
+        "server.route"
+      ],
+      "sourceFile": "hono.json"
+    },
+    {
+      "id": "framework.htmx",
+      "key": "htmx",
+      "name": "htmx",
+      "kind": "framework-profile",
+      "packages": [
+        "htmx.org"
+      ],
+      "capabilities": [
+        "event.custom",
+        "event.dom",
+        "resource.http",
+        "router.history",
+        "ui.target-swap"
+      ],
+      "sourceFile": "htmx.json"
+    },
+    {
+      "id": "framework.jquery",
+      "key": "jquery",
+      "name": "jquery",
+      "kind": "framework-profile",
+      "packages": [
+        "jquery"
+      ],
+      "capabilities": [
+        "network.ajax",
+        "state.data",
+        "ui.dom",
+        "ui.effects",
+        "ui.events"
+      ],
+      "sourceFile": "jquery.json"
+    },
+    {
+      "id": "framework.lit",
+      "key": "lit",
+      "name": "lit",
+      "kind": "framework-profile",
+      "packages": [
+        "lit"
+      ],
+      "capabilities": [
+        "render.webcomponents",
+        "ui.component",
+        "ui.lifecycle",
+        "ui.shadowdom",
+        "ui.template"
+      ],
+      "sourceFile": "lit.json"
+    },
+    {
+      "id": "framework.mobx",
+      "key": "mobx",
+      "name": "mobx",
+      "kind": "framework-profile",
+      "packages": [
+        "mobx",
+        "mobx-react-lite"
+      ],
+      "capabilities": [
+        "state.action",
+        "state.computed",
+        "state.reaction",
+        "state.signal"
+      ],
+      "sourceFile": "mobx.json"
+    },
+    {
+      "id": "framework.motion",
+      "key": "motion",
+      "name": "motion",
+      "kind": "framework-profile",
+      "packages": [
+        "motion",
+        "framer-motion"
+      ],
+      "capabilities": [
+        "motion.layout",
+        "motion.scroll",
+        "motion.spring",
+        "motion.tween"
+      ],
+      "sourceFile": "motion.json"
+    },
+    {
+      "id": "framework.mui",
+      "key": "mui",
+      "name": "mui",
+      "kind": "framework-profile",
+      "packages": [
+        "@mui/material",
+        "@mui/system"
+      ],
+      "capabilities": [
+        "accessibility.aria",
+        "design.component",
+        "design.responsive",
+        "design.theme",
+        "design.tokens"
+      ],
+      "sourceFile": "mui.json"
+    },
+    {
+      "id": "framework.nest",
+      "key": "nest",
+      "name": "nest",
+      "kind": "framework-profile",
+      "packages": [
+        "@nestjs/common",
+        "@nestjs/core"
+      ],
+      "capabilities": [
+        "server.di",
+        "server.http",
+        "server.middleware",
+        "server.module",
+        "server.route"
+      ],
+      "sourceFile": "nest.json"
+    },
+    {
+      "id": "framework.next",
+      "key": "next",
+      "name": "next",
+      "kind": "framework-profile",
+      "packages": [
+        "next"
+      ],
+      "capabilities": [
+        "resource.async",
+        "router.core",
+        "serialization.hydration",
+        "server.actions",
+        "server.ssr",
+        "ui.component"
+      ],
+      "sourceFile": "next.json"
+    },
+    {
+      "id": "framework.nuxt",
+      "key": "nuxt",
+      "name": "nuxt",
+      "kind": "framework-profile",
+      "packages": [
+        "nuxt",
+        "#app"
+      ],
+      "capabilities": [
+        "i18n.core",
+        "resource.async",
+        "router.core",
+        "server.actions",
+        "server.ssr",
+        "ui.component"
+      ],
+      "sourceFile": "nuxt.json"
+    },
+    {
+      "id": "framework.pinia",
+      "key": "pinia",
+      "name": "pinia",
+      "kind": "framework-profile",
+      "packages": [
+        "pinia"
+      ],
+      "capabilities": [
+        "state.action",
+        "state.selector",
+        "state.store"
+      ],
+      "sourceFile": "pinia.json"
+    },
+    {
+      "id": "framework.pixi",
+      "key": "pixi",
+      "name": "pixi",
+      "kind": "framework-profile",
+      "packages": [
+        "pixi.js"
+      ],
+      "capabilities": [
+        "render.canvas",
+        "render.webgl",
+        "render.webgpu"
+      ],
+      "sourceFile": "pixi.json"
+    },
+    {
+      "id": "framework.qwik",
+      "key": "qwik",
+      "name": "qwik",
+      "kind": "framework-profile",
+      "packages": [
+        "@builder.io/qwik"
+      ],
+      "capabilities": [
+        "compiler.template",
+        "event.lazy",
+        "serialization.hydration",
+        "serialization.resumability",
+        "ui.component"
+      ],
+      "sourceFile": "qwik.json"
+    },
+    {
+      "id": "framework.radix",
+      "key": "radix",
+      "name": "radix",
+      "kind": "framework-profile",
+      "packages": [
+        "@radix-ui"
+      ],
+      "capabilities": [
+        "accessibility.aria",
+        "accessibility.focus",
+        "accessibility.keyboard",
+        "design.component"
+      ],
+      "sourceFile": "radix.json"
+    },
+    {
+      "id": "framework.react-router",
+      "key": "react-router",
+      "name": "react-router",
+      "kind": "framework-profile",
+      "packages": [
+        "react-router",
+        "react-router-dom"
+      ],
+      "capabilities": [
+        "router.core",
+        "router.history",
+        "router.loader",
+        "router.params",
+        "router.query"
+      ],
+      "sourceFile": "react-router.json"
+    },
+    {
+      "id": "framework.react",
+      "key": "react",
+      "name": "react",
+      "kind": "framework-profile",
+      "packages": [
+        "react",
+        "react-dom"
+      ],
+      "capabilities": [
+        "state.effect",
+        "state.signal",
+        "ui.component",
+        "ui.conditional",
+        "ui.context",
+        "ui.events",
+        "ui.list",
+        "ui.ref"
+      ],
+      "sourceFile": "react.json"
+    },
+    {
+      "id": "framework.redux",
+      "key": "redux",
+      "name": "redux",
+      "kind": "framework-profile",
+      "packages": [
+        "redux",
+        "@reduxjs/toolkit"
+      ],
+      "capabilities": [
+        "state.action",
+        "state.selector",
+        "state.store",
+        "state.transaction"
+      ],
+      "sourceFile": "redux.json"
+    },
+    {
+      "id": "framework.shadcn",
+      "key": "shadcn",
+      "name": "shadcn",
+      "kind": "framework-profile",
+      "packages": [
+        "shadcn",
+        "@/components/ui"
+      ],
+      "capabilities": [
+        "accessibility.aria",
+        "design.component",
+        "design.tokens"
+      ],
+      "sourceFile": "shadcn.json"
+    },
+    {
+      "id": "framework.solid",
+      "key": "solid",
+      "name": "solid",
+      "kind": "framework-profile",
+      "packages": [
+        "solid-js"
+      ],
+      "capabilities": [
+        "resource.async",
+        "state.computed",
+        "state.effect",
+        "state.signal",
+        "ui.component"
+      ],
+      "sourceFile": "solid.json"
+    },
+    {
+      "id": "framework.stimulus",
+      "key": "stimulus",
+      "name": "stimulus",
+      "kind": "framework-profile",
+      "packages": [
+        "@hotwired/stimulus"
+      ],
+      "capabilities": [
+        "ui.controller",
+        "ui.events",
+        "ui.targets",
+        "ui.values"
+      ],
+      "sourceFile": "stimulus.json"
+    },
+    {
+      "id": "framework.svelte",
+      "key": "svelte",
+      "name": "svelte",
+      "kind": "framework-profile",
+      "packages": [
+        "svelte"
+      ],
+      "capabilities": [
+        "compiler.template",
+        "state.computed",
+        "state.signal",
+        "ui.actions",
+        "ui.component",
+        "ui.lifecycle"
+      ],
+      "sourceFile": "svelte.json"
+    },
+    {
+      "id": "framework.sveltekit",
+      "key": "sveltekit",
+      "name": "sveltekit",
+      "kind": "framework-profile",
+      "packages": [
+        "@sveltejs/kit",
+        "$app"
+      ],
+      "capabilities": [
+        "resource.async",
+        "router.core",
+        "serialization.hydration",
+        "server.actions",
+        "server.ssr",
+        "ui.component"
+      ],
+      "sourceFile": "sveltekit.json"
+    },
+    {
+      "id": "framework.tailwind",
+      "key": "tailwind",
+      "name": "tailwind",
+      "kind": "framework-profile",
+      "packages": [
+        "tailwindcss"
+      ],
+      "capabilities": [
+        "design.responsive",
+        "design.theme",
+        "design.tokens",
+        "design.utilities"
+      ],
+      "sourceFile": "tailwind.json"
+    },
+    {
+      "id": "framework.tanstack-router",
+      "key": "tanstack-router",
+      "name": "tanstack-router",
+      "kind": "framework-profile",
+      "packages": [
+        "@tanstack/react-router"
+      ],
+      "capabilities": [
+        "router.core",
+        "router.loader",
+        "router.params",
+        "router.query",
+        "router.type-safety"
+      ],
+      "sourceFile": "tanstack-router.json"
+    },
+    {
+      "id": "framework.three",
+      "key": "three",
+      "name": "three",
+      "kind": "framework-profile",
+      "packages": [
+        "three"
+      ],
+      "capabilities": [
+        "render.camera",
+        "render.scene",
+        "render.webgl",
+        "render.webgpu"
+      ],
+      "sourceFile": "three.json"
+    },
+    {
+      "id": "framework.vue",
+      "key": "vue",
+      "name": "vue",
+      "kind": "framework-profile",
+      "packages": [
+        "vue"
+      ],
+      "capabilities": [
+        "state.computed",
+        "state.reaction",
+        "state.signal",
+        "ui.component",
+        "ui.directive",
+        "ui.emits",
+        "ui.lifecycle",
+        "ui.props",
+        "ui.slots"
+      ],
+      "sourceFile": "vue.json"
+    },
+    {
+      "id": "framework.xstate",
+      "key": "xstate",
+      "name": "xstate",
+      "kind": "framework-profile",
+      "packages": [
+        "xstate",
+        "@xstate/react"
+      ],
+      "capabilities": [
+        "state.action",
+        "state.guard",
+        "state.machine",
+        "state.transition"
+      ],
+      "sourceFile": "xstate.json"
+    },
+    {
+      "id": "framework.zustand",
+      "key": "zustand",
+      "name": "zustand",
+      "kind": "framework-profile",
+      "packages": [
+        "zustand"
+      ],
+      "capabilities": [
+        "state.selector",
+        "state.store"
+      ],
+      "sourceFile": "zustand.json"
+    }
+  ]
+}
